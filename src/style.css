@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.form{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 40px 30px;
+    border: 1px solid black;
+    border-radius: 10px;
+
+}
+
+.form__title{
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 25px;
+    font-style: italic;
+}
+
+.form__input{
+    height: 30px;
+    border-radius: 3px 0 0 3px;
+    border: none;
+    outline: none;
+    width: 200px;
+    padding-left: 10px;
+    transition: 0.3s;
+    background-color: #00000010;
+}
+
+.form__input:focus{
+    -webkit-box-shadow: 0 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+    box-shadow: 0 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+    transition: 0.3s;
+}
+
+.form__btn{
+    height: 30px;
+    border-radius: 0 3px 3px 0;
+    border: none;
+    width: 120px;
+    cursor: pointer;
+    background-color: darkviolet;
+    color: white;
+}
+
+.weather__top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+}
+.weather__middle{
+    display: flex;
+    align-items: center;
+}
+.weather__switch{
+    align-self: flex-start;
+    font-size: 26px;
+}
+.weather__switch_item{
+    cursor: pointer;
+    color: black;
+}
+.weather__switch_item:hover{
+    color: chocolate;
+}
+
+.active{
+    color: chocolate;
+}
+
+.fiveDay{
+    justify-self: center;
+    width: 200px;
+    padding: 10px 0;
+    color: white;
+    background-color: darkviolet;
+    border: none;
+}
+.row-fiveDay{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding: 20px 0 0 0;
+}
+.vanta{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: -1;
+    color: white;
+    background-color: slateblue;
+}
